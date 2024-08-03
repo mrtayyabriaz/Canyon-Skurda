@@ -1,0 +1,14 @@
+{
+  "name": "canyon-skurda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "inded.html",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./style.css -o ./output.css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.7"
+  }
+}
