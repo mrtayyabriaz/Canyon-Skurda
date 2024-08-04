@@ -6,35 +6,190 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canyon Skurda</title>
   <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
 </head>
 
 <body>
   <div>
-    <nav
-      class="justify-between items-center flex p-4 border-b fixed top-0 left-0 w-full border-gray-200 bg-white bg-opacity-80 backdrop-blur-sm z-30">
-      <div class="items-center flex">
-        <a class="text-gray-900 font-medium text-lg" href="/">Canyon Skura</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <nav class="text-gray-800 bg-gray-50 fixed top-0 left-0  w-full z-30">
+      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+        <div class="relative flex h-16 items-center justify-between">
+          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <!-- Mobile menu button-->
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-sm p-1 text-gray-800 hover:outline outline-gray-600 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+              onclick="toggleMobileMenu()" aria-controls="mobile-menu" aria-expanded="false">
+              <span class="absolute -inset-0.5"></span>
+              <span class="sr-only">Open main menu</span>
+              <!-- Icon when menu is closed.Menu open: "hidden", Menu closed: "block"-->
+              <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+              </svg>
+              <!--
+                Icon when menu is open.
+    
+                Menu open: "block", Menu closed: "hidden"
+              -->
+              <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+            <div class="flex flex-shrink-0 items-center">
+              <!-- <img class="h-8 w-auto" src="" alt="Your Company"> -->
+              Canyon Skura
+            </div>
+            <div class="hidden sm:ml-6 sm:block">
+              <div class="flex space-x-4">
+                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                <a href="#about"
+                  class="px-3 py-2 text-sm font-medium text-gray-800 hover:border-green-700 border-b-2 border-transparent"
+                  aria-current="page">About</a>
+                <a href="#Drenovstica_Canyon"
+                  class="px-3 py-2 text-sm font-medium text-gray-800 hover:border-green-700 border-b-2 border-transparent">Drenovstica
+                  Canyon</a>
+                <a href="#Canyon_Skurda"
+                  class="px-3 py-2 text-sm font-medium text-gray-800 hover:border-green-700 border-b-2 border-transparent">Canyon
+                  Skurda</a>
+                <a href="#contact_form"
+                  class="px-3 py-2 text-sm font-medium text-gray-800 hover:border-green-700 border-b-2 border-transparent">CONTACT
+                  US</a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button"
+              class="relative rounded-full bg-green-700 transition-all hover:bg-green-800 px-2 py-1.5 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-800">
+              Book Now
+            </button>
+          </div>
+        </div>
       </div>
-      <div class="text-gray-800 text-lg flex space-x-2">
-        <a href="#about"
-          class="py-2 px-1 hover:text-green-800 font-semibold transition-all border-b-2 border-transparent hover:border-green-500 ">About
-          Us</a>
-        <a href="#Drenovstica_Canyon"
-          class="py-2 px-1 hover:text-green-800 font-semibold transition-all border-b-2 border-transparent hover:border-green-500">Drenovstica
-          Canyon</a>
-        <a href="#Canyon_Skurda"
-          class="py-2 px-1 hover:text-green-800 font-semibold transition-all border-b-2 border-transparent hover:border-green-500 ">Canyon
-          Skurda</a>
-        <a href="#contact_form"
-          class="py-2 px-1 hover:text-green-800 font-semibold transition-all border-b-2 border-transparent hover:border-green-500 ">CONTACT
-          US</a>
+
+      <!-- Mobile menu, show/hide based on menu state. -->
+      <div class="sm:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pb-3 pt-2">
+          <a href="#about"
+            class="block px-3 py-2 w-full text-sm font-medium text-gray-800 hover:border-green-700 border-l-2 border-transparent"
+            aria-current="page">About</a>
+          <a href="#Drenovstica_Canyon"
+            class="block px-3 py-2 w-full text-sm font-medium text-gray-800 hover:border-green-700 border-l-2 border-transparent">Drenovstica
+            Canyon</a>
+          <a href="#Canyon_Skurda"
+            class="block px-3 py-2 w-full text-sm font-medium text-gray-800 hover:border-green-700 border-l-2 border-transparent">
+            Canyon Skurda</a>
+          <a href="#contact_form"
+            class="block px-3 py-2 w-full text-sm font-medium text-gray-800 hover:border-green-700 border-l-2 border-transparent">Contact</a>
+        </div>
       </div>
-      <a href="#contact_form">
-        <button type="submit"
-          class="hover:bg-green-700 transition-all bg-green-600 text-white font-bold py-2 px-4 rounded-full">BOOK
-          NOW</button>
-      </a>
     </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div class="bg-white items-center justify-start min-h-screen flex p-5 relative">
       <div class="max-h-screen">
@@ -66,8 +221,8 @@
     <div class="container mx-auto px-4 py-8">
       <h1 class="text-center text-3xl font-semibold mb-8">OUR CANYONING TOURS</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2  gap-8">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-48 object-cover" src="assets/images/product1-1.jpg" alt="Canyoning Sušec">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="w-full h-60 object-cover" src="assets/images/product1-1.jpg" alt="Canyoning Sušec">
           <div class="p-6">
             <h2 class="text-lg font-semibold mb-2">Drenovstica Canyon Tour</h2>
             <p class="text-gray-700 mb-4">A nice and easy canyoning adventure suitable for families and beginners.</p>
@@ -75,8 +230,8 @@
               MORE</a>
           </div>
         </div>
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
-          <img class="w-full h-48 object-cover" src="assets/images/product1-2.jpg" alt="Canyoning Fratarica">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <img class="w-full h-60 object-cover" src="assets/images/product1-2.jpg" alt="Canyoning Fratarica">
           <div class="p-6">
             <h2 class="text-lg font-semibold mb-2">Canyon Skurda Tour</h2>
             <p class="text-gray-700 mb-4">A thrilling canyoning experience perfect for all adventure enthusiasts.</p>
@@ -115,10 +270,11 @@
 
       <!-- Drenovstica Canyon Tour -->
       <section class="pt-24" id="Drenovstica_Canyon">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="relative">
-            <img src="assets/images/product1-1.jpg" alt="Drenovstica Canyon" class="w-full h-64 object-cover">
-            <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center">
+            <img src="assets/images/product1-1.jpg" alt="Drenovstica Canyon"
+              class="w-full h-64 object-cover object-center">
+            <div class="absolute inset-0 bg-black bg-opacity-70 flex items-center justify-center">
               <h2 class="text-3xl font-bold text-white">Drenovstica Canyon Tour</h2>
             </div>
           </div>
@@ -262,14 +418,28 @@
 
 
             <div class="grid grid-cols-2 gap-4">
-              <img src="assets/images/product1-2.jpg" alt="Drenovstica Canyon Image 1"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product1-3.jpg" alt="Drenovstica Canyon Image 2"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product1-4.jpg" alt="Drenovstica Canyon Image 3"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product1-5.jpg" alt="Drenovstica Canyon Image 4"
-                class="w-full h-48 object-cover rounded-lg">
+              <a href="assets/images/product1-1.jpg" data-fancybox="product1" data-caption="Caption #1">
+                <img src="assets/images/product1-1.jpg" class="w-full h-64 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-2.jpg" data-fancybox="product1" data-caption="Caption #1">
+                <img src="assets/images/product1-2.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-3.jpg" data-fancybox="product1" data-caption="Caption #2">
+                <img src="assets/images/product1-3.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-4.jpg" data-fancybox="product1" data-caption="Caption #2">
+                <img src="assets/images/product1-4.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-5.jpg" data-fancybox="product1" data-caption="Caption #2">
+                <img src="assets/images/product1-5.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-6.jpg" data-fancybox="product1" data-caption="Caption #2">
+                <img src="assets/images/product1-6.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product1-7.jpg" data-fancybox="product1" data-caption="Caption #2">
+                <img src="assets/images/product1-7.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+
             </div>
           </div>
         </div>
@@ -277,7 +447,7 @@
 
       <!-- Canyon Skurda Tour -->
       <section class="pt-24" id="Canyon_Skurda">
-        <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
           <div class="relative">
             <img src="assets/images/product2-1.jpg" alt="Canyon Skurda" class="w-full h-64 object-cover">
             <div class="absolute inset-0 bg-black bg-opacity-80 flex items-center justify-center">
@@ -446,14 +616,32 @@
 
 
             <div class="grid grid-cols-2 gap-4">
-              <img src="assets/images/product2-2.jpg" alt="Canyon Skurda Image 1"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product2-3.jpg" alt="Canyon Skurda Image 2"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product2-4.jpg" alt="Canyon Skurda Image 3"
-                class="w-full h-48 object-cover rounded-lg">
-              <img src="assets/images/product2-5.jpg" alt="Canyon Skurda Image 4"
-                class="w-full h-48 object-cover rounded-lg">
+
+              <a href="assets/images/product2-1.jpg" data-fancybox="product2" data-caption="Caption #1">
+                <img src="assets/images/product2-1.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-2.jpg" data-fancybox="product2" data-caption="Caption #1">
+                <img src="assets/images/product2-2.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-3.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-3.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-4.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-4.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-5.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-5.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-6.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-6.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-7.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-7.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+              <a href="assets/images/product2-8.jpg" data-fancybox="product2" data-caption="Caption #2">
+                <img src="assets/images/product2-8.jpg" class="w-full h-60 object-cover rounded-lg" />
+              </a>
+
             </div>
           </div>
         </div>
@@ -555,13 +743,19 @@
 
 
 
-
-
-
-
-
-
   </div>
+
+
+
+
+
+  <script src="script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+  <script>
+    Fancybox.bind()
+  </script>
 </body>
 
 </html>
