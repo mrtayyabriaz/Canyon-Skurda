@@ -44,12 +44,12 @@
             </button>
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex flex-shrink-0 items-center">
-              <!-- <img class="h-8 w-auto" src="" alt="Your Company"> -->
-              kotor Canyoning
+            <div class="flex  items-center">
+              <img class="h-14 py-1 w-auto z-40" style="height: 3.5rem" src="KC-LOGO.png" alt="kotor Canyoning logo">
+              <!-- kotor Canyoning -->
             </div>
             <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-4">
+              <div class="flex space-x-4 items-center justify-center h-full">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
                 <a href="#about"
                   class="px-3 py-2 text-sm font-medium text-gray-800 hover:border-green-700 border-b-2 border-transparent"
@@ -69,7 +69,7 @@
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
             <a href="#contact_form">
               <button type="button"
-                class="relative rounded-full bg-green-700 transition-all hover:bg-green-800 px-2 py-1.5 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-800">
+                class="relative rounded-full bg-green-700 transition-all hover:bg-green-800 px-2.5 py-1.5 text-white hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-green-800">
                 Book Now
               </button>
             </a>
@@ -153,7 +153,7 @@
         <img src="assets/images/product2-1.jpg" alt="Canyoning in Montenegro"
           class="absolute top-0 left-0 w-full h-full object-cover ">
       </div>
-      <div class="w-full bg-gray-100 bg-opacity-80 rounded-lg border max-w-md p-8 z-10">
+      <div class="w-full bg-gray-50 bg-opacity-80 rounded-lg border max-w-md p-8 z-10">
         <p class="text-2xl font-bold text-gray-900 mb-3">Canyoning in Montenegro</p>
         <p class="text-gray-700 mb-4">Would you like to experience Montenegro, get to know its most beautiful, hidden
           and unexplored corners, and have fun along the way? Then canyoning in Montenegro is the activity that you need
@@ -404,8 +404,33 @@
             </div>
             <a href="#contact_form" class="w-full flex justify-center py-3">
               <button
-                class="mx-auto w-full rounded-full bg-green-700 hover:bg-gray-50 border-2 border-transparent hover:border-green-700 hover:text-green-700 transition-all my-3 py-1.5 px-3 font-semibold text-white text-lg flex items-center justify-center group">
-                Book Now<div class="group-hover:border-green-700 border-b-2 border-dashed w-1/4 mx-5"></div> Price: €70
+                class="mx-auto w-full rounded-full bg-green-700 hover:bg-gray-50 border-2 border-transparent hover:border-green-700 hover:text-green-700 transition-all my-3 py-1.5 px-3 font-semibold text-white text-sm sm:text-lg flex items-center justify-center group">
+                <div class="min-w-max">Book Now</div>
+                <div class="group-hover:border-green-700 border-b-2 border-dashed w-1/4 mx-5"></div> Price: €70
+              </button>
+            </a>
+            <a target="_blank"
+              href="https://www.tripadvisor.co.uk/AttractionProductReview-g304074-d28000336-Canyoning_Budva_Drenovstica-Budva_Budva_Municipality.html"
+              class="w-full flex justify-center py-1">
+              <button
+                class="mx-auto w-full rounded-full bg-gray-50 border-2  border-green-700 text-green-700 transition-all my-2 py-1.5 px-3 font-semibold text-lg flex flex-row justify-center gap-2">
+                <svg width="30px" height="30px" viewBox="0 -96 512.2 512.2" id="Layer_2"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <style>
+                    .st0 {
+                      fill: #08808a
+                    }
+                  </style>
+                  <path class="st0"
+                    d="M128.2 127.9C92.7 127.9 64 156.6 64 192c0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1.1-35.4-28.6-64.1-64-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S174 166.7 174 192s-20.5 45.9-45.8 45.9z" />
+                  <circle class="st0" cx="128.4" cy="191.9" r="31.9" />
+                  <path class="st0"
+                    d="M384.2 127.9c-35.4 0-64.1 28.7-64.1 64.1 0 35.4 28.7 64.1 64.1 64.1 35.4 0 64.1-28.7 64.1-64.1 0-35.4-28.7-64.1-64.1-64.1zm0 110c-25.3 0-45.9-20.5-45.9-45.9s20.5-45.9 45.9-45.9S430 166.7 430 192s-20.5 45.9-45.8 45.9z" />
+                  <circle class="st0" cx="384.4" cy="191.9" r="31.9" />
+                  <path class="st0"
+                    d="M474.4 101.2l37.7-37.4h-76.4C392.9 29 321.8 0 255.9 0c-66 0-136.5 29-179.3 63.8H0l37.7 37.4C14.4 124.4 0 156.5 0 192c0 70.8 57.4 128.2 128.2 128.2 32.5 0 62.2-12.1 84.8-32.1l43.4 31.9 42.9-31.2-.5-1.2c22.7 20.2 52.5 32.5 85.3 32.5 70.8 0 128.2-57.4 128.2-128.2-.1-35.4-14.6-67.5-37.9-90.7zM368 64.8c-60.7 7.6-108.3 57.6-111.9 119.5-3.7-62-51.4-112.1-112.3-119.5 30.6-22 69.6-32.8 112.1-32.8S337.4 42.8 368 64.8zM128.2 288.2C75 288.2 32 245.1 32 192s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2zm256 0c-53.1 0-96.2-43.1-96.2-96.2s43.1-96.2 96.2-96.2 96.2 43.1 96.2 96.2c-.1 53.1-43.1 96.2-96.2 96.2z" />
+                </svg>
+                Learn More on TripAdvisor
               </button>
             </a>
           </div>
@@ -608,7 +633,7 @@
             </div>
             <a href="#contact_form" class="w-full flex justify-center py-3">
               <button
-                class="mx-auto w-full rounded-full bg-green-700 hover:bg-gray-50 border-2 border-transparent hover:border-green-700 hover:text-green-700 transition-all my-3 py-1.5 px-3 font-semibold text-white text-lg flex items-center justify-center group">
+                class="mx-auto w-full rounded-full bg-green-700 hover:bg-gray-50 border-2 border-transparent hover:border-green-700 hover:text-green-700 transition-all my-3 py-1.5 px-3 font-semibold text-white text-sm sm:text-lg flex items-center justify-center group">
                 Book Now<div class="group-hover:border-green-700 border-b-2 border-dashed w-1/4 mx-5"></div> Price: €90
               </button>
             </a>
@@ -643,13 +668,13 @@
 
 
     <div class="isolate container px-5  mx-auto my-10" id="contact_form">
-      <div class="bg-white py-24 sm:py-32 shadow-md rounded-lg">
+      <div class="bg-white py-24 sm:py-32 px-5 shadow-md rounded-lg">
         <div class="mx-auto max-w-2xl text-center">
           <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Contact Us</h2>
           <!-- <p class="mt-2 text-lg leading-8 text-gray-600">Aute magna irure deserunt veniam aliqua magna enim voluptate. -->
           </p>
         </div>
-        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST" class="mx-auto mt-10 max-w-xl">
           <div class="grid grid-cols-1 gap-x-8 gap-y-3 sm:grid-cols-2">
             <div class="sm:col-span-2">
               <label for="name" class="block text-sm font-semibold leading-6 text-gray-900">Name</label>
@@ -666,8 +691,8 @@
               </div>
             </div>
             <div class="sm:col-span-2">
-              <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">contact
-                number</label>
+              <label for="phone-number" class="block text-sm font-semibold leading-6 text-gray-900">Contact
+                Number</label>
               <div class="mt-1.5">
                 <input type="tel" name="phone" id="phone" autocomplete="tel" placeholder="number" required
                   class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -755,12 +780,59 @@
       include 'dbconnect.php';
 
 
+
+      //================== Send Mail ( START ) ========================
+      $to = 'info@kotorcanyoning.com';
+      $subject = "New Contact Message - kotor Canyoning";
+      $body = '    
+      <!DOCTYPE html>
+      <html lang="en">
+      
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Mail - kotor Canyoning</title>
+      </head>
+      
+      <body>
+        <div style="background-color: #dcdcdc;padding: 20px;font-family: sans-serif;">
+          <div style="background-color: white;border-radius: 7px;padding-left: 10%;">
+            
+            <div style="font-family: sans-serif;width: 100%;">
+            <p style="width: 100%;color: black;">
+            Hi,<span style="font-size:1.6rem;">' . $name . '</span> Just Sent a message</p>
+            </div>
+            <div style="font-weight:bold;width: 100%;">
+              E-Mail: ' . $email . ' <br>
+              Contact Number: ' . $phone . ' <br>
+              Message: <br><p style="color: black;background-color: white;padding: 5px;margin-top: 10px;margin-bottom: 10px;">
+                ' . $message . '
+              </p>
+            </div>
+          </div>
+        </div>
+      </html>
+      ';
+      $headers = "From: kotor Canyoning <contact@kotorcanyoning.com>\r\n";
+      $headers .= "MIME-Version: 1.0\r\n";
+      $headers .= "Content-Type:text/html;cherset=UTF-8\r\n";
+      if (mail($to, $subject, $body, $headers)) {
+        $MessageSent = 'Message Received';
+      } else {
+        $MessageSent = 'Thank you for your message';
+        echo "Mail Sending Error";
+      }
+      //================== Send Mail  ( END )  ========================
+  
+
+
       $query = "INSERT INTO `contacts` (`Name`, `Email`, `Phone`, `Message`) VALUES ('$name', '$email','$phone', '$message')";
 
       if (mysqli_query($link, $query)) {
         echo ' <section
       class="flex flex-col justify-center px-10 py-9 text-base bg-white rounded-lg border border-solid shadow-xl shadow-gray-400 border-zinc-200 max-w-[465px] fixed bottom-2 left-2 z-20">
-      <h2 class="self-center text-xl font-semibold text-center text-black">Thank you for your message!</h2>
+      <h2 class="self-center text-xl font-semibold text-center text-black">' . $MessageSent . '!</h2>
       <p class="mt-2 leading-6 text-center text-zinc-600 text-opacity-60">We have received your message and will get back to you shortly. Have a great day!
       <button type="button" onclick="this.parentNode.parentNode.remove()"
         class="w-full px-5 py-3.5 mt-4 font-bold whitespace-nowrap bg-green-700 rounded-lg text-neutral-100">Okay</button>
